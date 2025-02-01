@@ -31,6 +31,6 @@ class LicenseController extends Controller
             $license->save();
         }
 
-        return response()->json(['status' => 'success', 'message' => 'License validated successfully']);
+        return response()->json(['status' => 'success', 'message' => 'License validation successful']);
     }
 }
