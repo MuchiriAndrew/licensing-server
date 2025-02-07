@@ -19,7 +19,7 @@ class LicenseController extends Controller
         }
 
         if (!$license->is_active || ($license->expires_at && $license->expires_at < now())) {
-            return response()->json(['status' => 'error', 'message' => 'License expired or inactive'], 403);
+            return response()->json(['status' => 'error', 'message' => 'License expired'], 403);
         }
 
         if ($license->domain && $license->domain !== $domain) {
