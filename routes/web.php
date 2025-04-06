@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 Route::post('/validate-license', [LicenseController::class, 'validate_license']);
+Route::post('/create-license', [LicenseController::class, 'create_license']);
 

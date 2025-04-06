@@ -33,4 +33,8 @@ class LicenseController extends Controller
 
         return response()->json(['status' => 'success', 'message' => 'License validation successful']);
     }
+
+    public function create_license() {
+        dd("create_license");
+    }
 }
